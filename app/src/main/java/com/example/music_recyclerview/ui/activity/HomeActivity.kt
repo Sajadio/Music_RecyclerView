@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.example.music_recyclerview.R
 import com.example.music_recyclerview.databinding.ActivityHomeBinding
 import com.example.music_recyclerview.ui.fragment.HomeFragment
+import com.example.music_recyclerview.utils.replaceFragment
 
 class HomeActivity : AppCompatActivity() {
 
@@ -16,9 +17,6 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        supportFragmentManager.beginTransaction().apply {
-            replace(R.id.fragment_container_music, HomeFragment())
-            commit()
-        }
+        replaceFragment(HomeFragment())
     }
 }

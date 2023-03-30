@@ -5,12 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.music_recyclerview.data.DataManger
 import com.example.music_recyclerview.databinding.FragmentHomeBinding
-import com.example.music_recyclerview.ui.fragment.adapter.NewMusicAdapter
 import com.example.music_recyclerview.utils.replaceFragment
 
-class HomeFragment : Fragment() {
+class SearchFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
 
     override fun onCreateView(
@@ -24,11 +22,10 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.include.root.setOnClickListener {
-            requireActivity().replaceFragment(HomeFragment())
-        }
 
-        binding.recyclerViewNewMusic.adapter = NewMusicAdapter(DataManger.songs)
+        binding.include.root.setOnClickListener {
+            requireActivity().replaceFragment(SearchFragment())
+        }
     }
 
 }
