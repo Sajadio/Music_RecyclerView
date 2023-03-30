@@ -6,4 +6,6 @@
     <string name="david_gutter_bebe_rex"><![CDATA[David Gutter & Bebe Rex]]></string>
     <string name="rock">Rock</string>
     <string name="hip_hop">Hip Hop</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
