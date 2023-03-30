@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SearchBoxStyle" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_large</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_large</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_large</item>
+        <item name="boxCornerRadiusTopStart">@dimen/radius_large</item>
+        <item name="boxStrokeWidth">@dimen/box_stroke_width</item>
+        <item name="boxStrokeWidthFocused">@dimen/box_stroke_width</item>
+        <item name="endIconDrawable">@drawable/icon_filter</item>
+        <item name="endIconMode">custom</item>
+        <item name="hintEnabled">false</item>
+        <item name="startIconDrawable">@drawable/icon_search</item>
+        <item name="hintTextColor">@color/tertiary_60</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/font_size_title</item>
+    </style>
+
+    <style name="SearchEditTextStyle">
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">textFilter</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textColor">@color/tertiary_87</item>
+    </style>
+
+    <style name="ChipStyle" parent="Widget.Material3.Chip.Filter">
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="android:textSize">@dimen/font_size_body</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="chipStartPadding">8dp</item>
+        <item name="chipEndPadding">8dp</item>
+    </style>
+
+</resources>
