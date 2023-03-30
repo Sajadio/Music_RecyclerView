@@ -1,4 +1,4 @@
-package com.example.music_recyclerview
+package com.example.music_recyclerview.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

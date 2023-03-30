@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Music App</string>
     <string name="search">Search</string>
-    <string name="trending_right_now">Trending right now</string>
+    <string name="new_music">New music</string>
     <string name="i_m_good_blue">I’m Good (Blue)</string>
     <string name="david_gutter_bebe_rex"><![CDATA[David Gutter & Bebe Rex]]></string>
     <string name="rock">Rock</string>
