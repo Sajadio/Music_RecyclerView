@@ -1,9 +1,6 @@
-package com.example.music_recyclerview.ui.fragment
+package com.example.music_recyclerview.ui.fragment.search
 
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,8 +9,7 @@ import androidx.fragment.app.Fragment
 import com.example.music_recyclerview.data.DataManger
 import com.example.music_recyclerview.data.Music
 import com.example.music_recyclerview.databinding.FragmentSearchBinding
-import com.example.music_recyclerview.ui.fragment.adapter.SearchMusicAdapter
-import kotlin.math.log
+import com.example.music_recyclerview.ui.fragment.search.adapter.SearchMusicAdapter
 
 class SearchFragment : Fragment() {
     private lateinit var binding: FragmentSearchBinding

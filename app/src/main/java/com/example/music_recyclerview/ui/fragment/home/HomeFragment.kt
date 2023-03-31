@@ -1,4 +1,4 @@
-package com.example.music_recyclerview.ui.fragment
+package com.example.music_recyclerview.ui.fragment.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.music_recyclerview.data.DataManger
 import com.example.music_recyclerview.databinding.FragmentHomeBinding
-import com.example.music_recyclerview.ui.fragment.adapter.NewMusicAdapter
+import com.example.music_recyclerview.ui.fragment.search.SearchFragment
+import com.example.music_recyclerview.ui.fragment.home.adapter.NewMusicAdapter
 import com.example.music_recyclerview.utils.replaceFragment
 
 class HomeFragment : Fragment() {
@@ -27,7 +28,7 @@ class HomeFragment : Fragment() {
             include.searchBox.setStartIconOnClickListener {
                 requireActivity().replaceFragment(SearchFragment(), this::class.simpleName)
             }
-            val adapter = NewMusicAdapter(DataManger.songs)
+            val adapter = NewMusicAdapter(DataManger.getNewMusic())
             recyclerViewNewMusic.adapter = adapter
         }
     }

@@ -1,8 +1,7 @@
-package com.example.music_recyclerview.ui.fragment.adapter
+package com.example.music_recyclerview.ui.fragment.home.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.music_recyclerview.data.Music
 import com.example.music_recyclerview.databinding.ItemCardNewMusicBinding
@@ -18,6 +17,7 @@ class NewMusicAdapter(
         val view = ItemCardNewMusicBinding.inflate(inflate, parent, false)
         return NewMusicViewHolder(view)
     }
+
 
     override fun onBindViewHolder(holder: NewMusicViewHolder, position: Int) {
         val music = items[position]

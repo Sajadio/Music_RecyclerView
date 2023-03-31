@@ -1,4 +1,4 @@
-package com.example.music_recyclerview.ui.fragment.adapter
+package com.example.music_recyclerview.ui.fragment.search.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
