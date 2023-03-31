@@ -9,6 +9,8 @@
         android:id="@+id/include"
         layout="@layout/search_item" />
 
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_new_music"
         android:layout_width="match_parent"
