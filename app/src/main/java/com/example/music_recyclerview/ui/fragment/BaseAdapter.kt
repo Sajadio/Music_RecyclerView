@@ -1,5 +1,6 @@
 package com.example.music_recyclerview.ui.fragment
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -15,6 +16,7 @@ abstract class BaseAdapter<VB : ViewBinding, T : Any>(
     abstract fun bindItem(binding: VB, item: T)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder<VB> {
+        Log.d("Sajjadio", "onCreateViewHolder: ")
         val inflate = LayoutInflater.from(parent.context)
         val view = bindingInfalter(inflate, parent, false)
         return BaseViewHolder(view)
