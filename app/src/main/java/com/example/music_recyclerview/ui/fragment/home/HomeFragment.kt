@@ -28,6 +28,8 @@ class HomeFragment : Fragment() {
             include.searchBox.setStartIconOnClickListener {
                 requireActivity().replaceFragment(SearchFragment(), this::class.simpleName)
             }
+
+            
             val adapter = NewMusicAdapter(DataManger.getNewMusic())
             recyclerViewNewMusic.adapter = adapter
         }
