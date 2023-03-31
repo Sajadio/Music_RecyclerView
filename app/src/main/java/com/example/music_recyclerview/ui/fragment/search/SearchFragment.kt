@@ -25,10 +25,6 @@ class SearchFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         with(binding.include) {
-            textViewNewMusic.text = "Search music"
-            editTextName.isEnabled = true
-
-
 
             editTextName.addTextChangedListener { title ->
                 if (title.toString().isNotEmpty()){

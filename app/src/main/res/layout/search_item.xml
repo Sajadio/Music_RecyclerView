@@ -25,12 +25,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/text_view_new_music"
+        android:id="@+id/text_view_trend_music"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/spacing_large"
         android:fontFamily="@font/poppins_semibold"
-        android:text="@string/new_music"
+        android:text="@string/trend_music"
         android:textColor="@color/tertiary_87"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/search_box"

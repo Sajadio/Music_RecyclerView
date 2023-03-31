@@ -9,6 +9,7 @@ import com.example.music_recyclerview.data.DataManger
 import com.example.music_recyclerview.databinding.FragmentHomeBinding
 import com.example.music_recyclerview.ui.fragment.search.SearchFragment
 import com.example.music_recyclerview.ui.fragment.home.adapter.NewMusicAdapter
+import com.example.music_recyclerview.ui.fragment.home.adapter.TrendMusicAdapter
 import com.example.music_recyclerview.utils.replaceFragment
 
 class HomeFragment : Fragment() {
@@ -29,9 +30,11 @@ class HomeFragment : Fragment() {
                 requireActivity().replaceFragment(SearchFragment(), this::class.simpleName)
             }
 
+            val trendAdapter = TrendMusicAdapter(DataManger.getNewMusic())
+            recyclerViewTrendMusic.adapter = trendAdapter
             
-            val adapter = NewMusicAdapter(DataManger.getNewMusic())
-            recyclerViewNewMusic.adapter = adapter
+            val newMusicAdapter = NewMusicAdapter(DataManger.getNewMusic())
+            recyclerViewNewMusic.adapter = newMusicAdapter
         }
     }
 }
