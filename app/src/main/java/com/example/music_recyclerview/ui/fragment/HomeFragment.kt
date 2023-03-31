@@ -23,12 +23,12 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        binding.include.root.setOnClickListener {
-            requireActivity().replaceFragment(HomeFragment())
+        with(binding) {
+            include.searchBox.setStartIconOnClickListener {
+                requireActivity().replaceFragment(SearchFragment(), this::class.simpleName)
+            }
+            val adapter = NewMusicAdapter(DataManger.songs)
+            recyclerViewNewMusic.adapter = adapter
         }
-
-        binding.recyclerViewNewMusic.adapter = NewMusicAdapter(DataManger.songs)
     }
-
 }

@@ -16,10 +16,11 @@ fun ImageView.loadImage(url: String) {
         .into(this)
 }
 
-fun FragmentActivity.replaceFragment(fragment: Fragment) {
+fun FragmentActivity.replaceFragment(fragment: Fragment, backStack: String? = null) {
     this.apply {
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.fragment_container_music, fragment)
+            backStack?.let { addToBackStack(backStack) }
             commit()
         }
     }

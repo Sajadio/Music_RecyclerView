@@ -11,6 +11,10 @@ object DataManger {
         Music(6, "Moonlight Sonata", "David Kim", "https://images.unsplash.com/photo-1679464307375-ad8ab6a70029?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"),
         Music(7, "Breaking Free", "Karen Lee", "https://images.unsplash.com/photo-1603665301175-57ba46f392bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"),
         Music(8, "Echoes of the Past", "Daniel Park", "https://images.unsplash.com/photo-1680070568461-0342ba529988?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"),
-        Music(9, "Rainy Days", "Sarah Chen", "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80")
     )
+
+
+    fun getSongByTitle(title:String): List<Music> {
+        return songs.filter { it.title.contains(title, ignoreCase = true) }
+    }
 }

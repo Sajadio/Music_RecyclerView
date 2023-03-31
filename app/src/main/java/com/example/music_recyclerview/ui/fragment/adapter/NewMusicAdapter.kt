@@ -2,13 +2,14 @@ package com.example.music_recyclerview.ui.fragment.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.music_recyclerview.data.Music
 import com.example.music_recyclerview.databinding.ItemCardNewMusicBinding
 import com.example.music_recyclerview.utils.loadImage
 
 class NewMusicAdapter(
-    private val items: List<Music>
+    private var items: List<Music>
 ) :
     RecyclerView.Adapter<NewMusicAdapter.NewMusicViewHolder>() {
 

@@ -8,9 +8,10 @@ import com.example.music_recyclerview.databinding.ItemCardNewMusicBinding
 import com.example.music_recyclerview.utils.loadImage
 
 class SearchMusicAdapter(
-    private val items: List<Music>
+    private var items: List<Music>
 ) :
     RecyclerView.Adapter<SearchMusicAdapter.SearchMusicViewHolder>() {
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SearchMusicViewHolder {
         val inflate = LayoutInflater.from(parent.context)
